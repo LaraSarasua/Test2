@@ -1,0 +1,7 @@
+body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
+form { margin: 1rem 0; }
+input, textarea { display: block; width: 100%; margin-bottom: 0.5rem; }
+button { padding: 0.5rem 1rem; margin-right: 0.5rem; background: #4caf50; color: white; border: none; cursor: pointer; }
+ul { list-style: none; padding: 0; }
+li { background: white; margin: 0.5rem 0; padding: 1rem; border-radius: 4px; }
+li button { background: #f44336; }
