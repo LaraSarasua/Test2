@@ -46,7 +46,7 @@ function renderNote(n) {
       ${n.isArchived ? 'Unfile' : 'Archive'}
     </button>
     <button onclick="deleteNote(${n.id})">Delete</button>
-    <button onclick="startEditing(${n.id},${JSON.stringify(n.title)},${JSON.stringify(n.content)})">
+    <button onclick="startEditing(${n.id},'${n.title}','${n.content}')">
       Modify 
     </button>
   `;
