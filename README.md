@@ -2,11 +2,23 @@
 SPA for note management with Node.js, Express, Sequelize and MySQL.
 
 ## Technologies
-- Node.js v18+
-- Express
-- Sequelize + mysql2
-- MySQL 8+
-- Vanilla JS, HTML y CSS
+    Backend:
+    - Node.js v18+
+    - Express
+    - Sequelize + mysql2
+    - MySQL 8+
+    Frontend:
+    - Angular (v+12)
+    - HTML5
+    - CSS3
+    - JavaScript(Vanilla JS)
+## Prerequisites
+
+Before running this application, ensure that you have the following installed:
+
+- **Node.js** (v18 or higher)
+- **MySQL** (v8+)
+- **Angular CLI** (v12+)
 
 ## How to execute
 1. Clone repo  
@@ -14,3 +26,6 @@ SPA for note management with Node.js, Express, Sequelize and MySQL.
 3. Create DB:
     ```sql
    CREATE DATABASE ensolvers_notes;
+4. Run the run.sh script.
+
+Done!
