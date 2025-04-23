@@ -12,9 +12,18 @@
       <button onclick="loadNotes()">Actives</button>
       <button onclick="loadArchivedNotes()">Archived</button>
     </div>
+    <div>
+      <label for="category-filter">Filter by Category</label>
+      <select id="category-filter">
+        <option value="">All Categories</option>
+      </select>
+    </div>
     <form id="note-form">
-      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="title" placeholder="title" required>
       <textarea id="content" placeholder="Content" required></textarea>
+  
+      <input type="text" id="category" placeholder="Category (optional)">
+      
       <button type="submit">Save</button>
     </form>
     <ul id="notes-list"></ul>

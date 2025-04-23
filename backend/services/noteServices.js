@@ -1,6 +1,12 @@
 const { Note } = require('../models');
 
-exports.getAll = async () => Note.findAll({ order: [['createdAt','DESC']] });
+exports.getAll = async (category) => {
+  const where = category ? {category} : {};
+  return await Note.findAll({
+    where, 
+    order: [['createdAt', 'DESC']],
+  });
+};
 exports.create = async data => Note.create(data);
 exports.update = async (id, data) => {
   const note = await Note.findByPk(id);

@@ -1,8 +1,14 @@
 const noteService = require('../services/noteServices');
 
 exports.getAllNotes = async (req, res) => {
-  const notes = await noteService.getAll();
-  res.json(notes);
+  try {
+    const category = req.query.category;
+    const notes = await noteService.getAll();
+    res.json(notes);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+  
 };
 
 exports.createNote = async (req, res) => {
@@ -12,7 +18,8 @@ exports.createNote = async (req, res) => {
 
 exports.updateNote = async (req, res) => {
   try {
-    const note = await noteService.update(req.params.id, req.body);
+    const {title, content, category} = req.body;
+    const note = await noteService.update(req.params.id, {title, content, category});
     res.json(note);
   } catch (err) {
     res.status(404).send(err.message);

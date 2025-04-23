@@ -12,7 +12,7 @@ app.use('/api/notes', noteRoutes);
 
 const PORT = process.env.PORT;
 
-sequelize.sync()
+sequelize.sync({alter: true})
   .then(() => app.listen(PORT, () =>
     console.log(`Backend at http://localhost:${PORT}`)
   ))
