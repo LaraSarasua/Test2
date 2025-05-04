@@ -1,4 +1,4 @@
-# Ensolvers Notes App
+# Notes App
 SPA for note management with Node.js, Express, Sequelize and MySQL.
 
 ## Technologies
